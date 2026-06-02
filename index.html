@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rebuild_CG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Font Face Declaration */
+      @font-face {
+        font-family: 'Neue Montreal';
+        src: local('Neue Montreal'), local('NeueMontreal-Regular');
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'Neue Montreal';
+        src: local('Neue Montreal'), local('NeueMontreal-Bold');
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'Neue Montreal';
+        src: local('Neue Montreal'), local('NeueMontreal-Medium');
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'Neue Montreal';
+        src: local('Neue Montreal'), local('NeueMontreal-Light');
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      /* Global Reset for Font */
+      * {
+        font-family: 'Neue Montreal', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+      }
+
+      body {
+        margin: 0;
+        background-color: #09090b; /* Zinc 950 */
+        color: #e4e4e7; /* Zinc 200 */
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Custom scrollbar for panels */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3f3f46;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #52525b;
+      }
+      
+      .grid-bg {
+        background-size: 40px 40px;
+        background-image:
+          linear-gradient(to right, #1f1f1f 1px, transparent 1px),
+          linear-gradient(to bottom, #1f1f1f 1px, transparent 1px);
+      }
+      
+      /* Force utility classes to use the brand font */
+      .font-sans, .font-mono, .font-serif, pre, code, kbd, samp {
+        font-family: 'Neue Montreal', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+      }
+
+      /* Infinite Vertical Scroll Animation */
+      @keyframes scroll-vertical {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50%); }
+      }
+      
+      .animate-scroll-vertical {
+        animation: scroll-vertical 60s linear infinite;
+      }
+      
+      .animate-scroll-vertical:hover {
+        animation-play-state: paused;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

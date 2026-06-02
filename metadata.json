@@ -1,0 +1,6 @@
+{
+  "name": "Copy of Rebuild_CG",
+  "description": "A node-based visual editor (like Grasshopper) to extract specific attributes from reference images using Gemini 2.5/3. Connect images to attribute nodes to build complex, structured JSON prompts for rendering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
